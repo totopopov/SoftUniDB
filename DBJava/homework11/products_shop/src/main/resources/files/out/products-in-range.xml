@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products>
+    <product name="Allopurinol" price="518.50" seller="Jeremy Woods"/>
+    <product name="TERSI" price="554.91" seller="Bonnie Fox"/>
+    <product name="ESIKA" price="879.37" seller="Marie Williamson"/>
+    <product name="EPZICOM" price="895.65" seller="Thomas Snyder"/>
+    <product name="Metformin Hydrochloride" price="953.99" seller="Patricia Cooper"/>
+    <product name="Retin-A MICRO" price="995.98" seller="Patrick King"/>
+</products>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-5.1.42-bin">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/SoftUni/Java/JavaDBAdvanced/connector/mysql-connector-java-5.1.42" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/SoftUni/Java/JavaDBAdvanced/connector/mysql-connector-java-5.1.42/src" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/SoftUni/Java/JavaDBAdvanced/connector/mysql-connector-java-5.1.42" recursive="false" />
+  </library>
+</component>

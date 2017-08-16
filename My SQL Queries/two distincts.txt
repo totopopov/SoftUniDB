@@ -1,0 +1,15 @@
+SELECT DISTINCT employees.department_id FROM employees;
+
+SELECT DISTINCT employees.manager_id FROM employees;
+
+CREATE TABLE testing(
+		depart INT,
+		manager INT );
+		
+TRUNCATE TABLE testing;
+INSERT INTO testing(depart,manager) 
+		((SELECT DISTINCT employees.department_id FROM employees),
+		(SELECT DISTINCT employees.manager_id FROM employees);
+
+
+SELECT (SELECT group_concat(DISTINCT col1) FROM testtable) as col1, (SELECT group_concat(DISTINCT col2) FROM testtable) as col2;

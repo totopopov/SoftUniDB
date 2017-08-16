@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PersistenceUnit/Hibernate">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="hoteldb">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bank"/>
+    <schema id="4" parent="1" name="b_exam_sql"/>
+    <schema id="5" parent="1" name="car_rental"/>
+    <schema id="6" parent="1" name="chinook"/>
+    <schema id="7" parent="1" name="demo"/>
+    <schema id="8" parent="1" name="diablo"/>
+    <schema id="9" parent="1" name="d_october_2016"/>
+    <schema id="10" parent="1" name="exam"/>
+    <schema id="11" parent="1" name="example"/>
+    <schema id="12" parent="1" name="geography"/>
+    <schema id="13" parent="1" name="hotel"/>
+    <schema id="14" parent="1" name="information_schema"/>
+    <schema id="15" parent="1" name="jdbc"/>
+    <schema id="16" parent="1" name="kofa"/>
+    <schema id="17" parent="1" name="minions"/>
+    <schema id="18" parent="1" name="minionsdb"/>
+    <schema id="19" parent="1" name="minions_db"/>
+    <schema id="20" parent="1" name="movies"/>
+    <schema id="21" parent="1" name="mysql"/>
+    <schema id="22" parent="1" name="performance_schema"/>
+    <schema id="23" parent="1" name="queries"/>
+    <schema id="24" parent="1" name="salesdb"/>
+    <schema id="25" parent="1" name="school"/>
+    <schema id="26" parent="1" name="soft_uni"/>
+    <schema id="27" parent="1" name="soft_unicat"/>
+    <schema id="28" parent="1" name="soft_uni_hibernate"/>
+    <schema id="29" parent="1" name="soft_uni_old"/>
+    <schema id="30" parent="1" name="sys"/>
+    <schema id="31" parent="1" name="the_nerd_herd"/>
+    <table id="32" parent="2" name="bed_types"/>
+    <table id="33" parent="2" name="customers"/>
+    <table id="34" parent="2" name="employees"/>
+    <table id="35" parent="2" name="occupancies"/>
+    <table id="36" parent="2" name="occupancies_rooms"/>
+    <table id="37" parent="2" name="payments"/>
+    <table id="38" parent="2" name="room_status"/>
+    <table id="39" parent="2" name="room_types"/>
+    <table id="40" parent="2" name="rooms"/>
+    <column id="41" parent="32" name="bed_type">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="32" name="notes">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="43" parent="32" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>bed_type</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="33" name="accountNumer">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="33" name="emergency_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="46" parent="33" name="emergency_number">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="47" parent="33" name="first_name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="48" parent="33" name="last_name">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="49" parent="33" name="notes">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="50" parent="33" name="phone_number">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="51" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>accountNumer</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="34" name="first_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="54" parent="34" name="last_name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="55" parent="34" name="notes">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="56" parent="34" name="title">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="57" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="35" name="date_occupied">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="60" parent="35" name="notes">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="61" parent="35" name="phoneCharges">
+      <Position>4</Position>
+      <DataType>decimal(19,2)|0</DataType>
+    </column>
+    <column id="62" parent="35" name="rateApplied">
+      <Position>5</Position>
+      <DataType>decimal(19,2)|0</DataType>
+    </column>
+    <column id="63" parent="35" name="account_number">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="64" parent="35" name="FKhhmvy3f713fisn0sc3xsxp7rd">
+      <ColNames>account_number</ColNames>
+    </index>
+    <key id="65" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="66" parent="35" name="FKhhmvy3f713fisn0sc3xsxp7rd">
+      <ColNames>account_number</ColNames>
+      <RefSchemaName>hoteldb</RefSchemaName>
+      <RefTableName>customers</RefTableName>
+      <RefColNames>accountNumer</RefColNames>
+    </foreign-key>
+    <column id="67" parent="36" name="occupant_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="36" name="room_number">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="69" parent="36" name="FKqidfnhtqwki2vhl9lvhiexsqe">
+      <ColNames>room_number</ColNames>
+    </index>
+    <key id="70" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>occupant_id
+room_number</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="71" parent="36" name="FKt24vdcbf9lelsxxxlep1t79js">
+      <ColNames>occupant_id</ColNames>
+      <RefSchemaName>hoteldb</RefSchemaName>
+      <RefTableName>occupancies</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="72" parent="36" name="FKqidfnhtqwki2vhl9lvhiexsqe">
+      <ColNames>room_number</ColNames>
+      <RefSchemaName>hoteldb</RefSchemaName>
+      <RefTableName>rooms</RefTableName>
+      <RefColNames>roomNumber</RefColNames>
+    </foreign-key>
+    <column id="73" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="74" parent="37" name="amount_charged">
+      <Position>2</Position>
+      <DataType>decimal(19,2)|0</DataType>
+    </column>
+    <column id="75" parent="37" name="first_date_occupied">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="76" parent="37" name="last_date_occupied">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="77" parent="37" name="notes">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="78" parent="37" name="payment_total">
+      <Position>6</Position>
+      <DataType>decimal(19,2)|0</DataType>
+    </column>
+    <column id="79" parent="37" name="paymentDate">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="80" parent="37" name="tax_amount">
+      <Position>8</Position>
+      <DataType>decimal(19,2)|0</DataType>
+    </column>
+    <column id="81" parent="37" name="tax_rate">
+      <Position>9</Position>
+      <DataType>decimal(19,2)|0</DataType>
+    </column>
+    <column id="82" parent="37" name="total_days">
+      <Position>10</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="83" parent="37" name="account_number">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="84" parent="37" name="FKjksa8dloxmd9yv473kfy6akuj">
+      <ColNames>account_number</ColNames>
+    </index>
+    <key id="85" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="86" parent="37" name="FKjksa8dloxmd9yv473kfy6akuj">
+      <ColNames>account_number</ColNames>
+      <RefSchemaName>hoteldb</RefSchemaName>
+      <RefTableName>customers</RefTableName>
+      <RefColNames>accountNumer</RefColNames>
+    </foreign-key>
+    <column id="87" parent="38" name="room_status">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="38" name="notes">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="89" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>room_status</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="90" parent="39" name="room_type">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="39" name="notes">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="92" parent="39" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>room_type</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="93" parent="40" name="roomNumber">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="94" parent="40" name="notes">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="95" parent="40" name="rate">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="96" parent="40" name="bed_type">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="97" parent="40" name="room_status">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="98" parent="40" name="room_type">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="99" parent="40" name="FK19oiix04hlw3uk4q8me5evt5b">
+      <ColNames>bed_type</ColNames>
+    </index>
+    <index id="100" parent="40" name="FK2hm4lxcr8mamt4gnvc1vs35qm">
+      <ColNames>room_type</ColNames>
+    </index>
+    <index id="101" parent="40" name="FKhkmrje7ibt0eegdku5wfgh2r">
+      <ColNames>room_status</ColNames>
+    </index>
+    <key id="102" parent="40" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>roomNumber</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="103" parent="40" name="FK19oiix04hlw3uk4q8me5evt5b">
+      <ColNames>bed_type</ColNames>
+      <RefSchemaName>hoteldb</RefSchemaName>
+      <RefTableName>bed_types</RefTableName>
+      <RefColNames>bed_type</RefColNames>
+    </foreign-key>
+    <foreign-key id="104" parent="40" name="FKhkmrje7ibt0eegdku5wfgh2r">
+      <ColNames>room_status</ColNames>
+      <RefSchemaName>hoteldb</RefSchemaName>
+      <RefTableName>room_status</RefTableName>
+      <RefColNames>room_status</RefColNames>
+    </foreign-key>
+    <foreign-key id="105" parent="40" name="FK2hm4lxcr8mamt4gnvc1vs35qm">
+      <ColNames>room_type</ColNames>
+      <RefSchemaName>hoteldb</RefSchemaName>
+      <RefTableName>room_types</RefTableName>
+      <RefColNames>room_type</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
