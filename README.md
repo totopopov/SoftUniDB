@@ -1,1 +1,1 @@
-# SoftUniDB
+# SoftUniJavaDB
